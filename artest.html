@@ -41,10 +41,10 @@
             let color=['red','green','blue'][Math.round(Math.random()*3)]
             // add place name
             let box = document.createElement('a-box');
-            box.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-            box.setAttribute('position', `0 ${altitude} 0`);
-            box.setAttribute('scale', '50 50 50');
-            box.setAttribute('material', `color: ${color}`);
+            box.setAttribute(`gps-entity-place='latitude: ${latitude}; longitude: ${longitude};'`);
+            box.setAttribute(`position='0 ${altitude} 0'`);
+            box.setAttribute(`scale='50 50 50'`);
+            box.setAttribute(`material='color: ${color}'`);
 
             scene.appendChild(box);
         }
