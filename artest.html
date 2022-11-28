@@ -34,11 +34,11 @@
 
    function renderPlaces(places, lat, lon) {
         let scene = document.querySelector('a-scene');
-        for (let i=0;i<100000;i++) {
+        for (let i=0;i<10000;i++) {
         //places.forEach((place) => {
             let latitude = lat+Math.random()*0.4-0.2; //place.location.lat;
             let longitude = lon+Math.random()*0.4-0.2; //place.location.lng;
-            let altitude= Math.random()*1000; //place.location.lng;
+            let altitude= Math.random()*10000; //place.location.lng;
             let color=COLORS[Math.floor(Math.random()*COLORS.length)]
             // add place name
             let box = document.createElement('a-box');
