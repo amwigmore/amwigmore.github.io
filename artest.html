@@ -17,7 +17,7 @@
         
             return navigator.geolocation.getCurrentPosition(function (position) {
                 let camera = document.querySelector('a-camera');
-                box.setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`);
+                camera.setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`);
                 renderPlaces(places, position.coords.latitude, position.coords.longitude);
             },
                 (err) => console.error('Error in retrieving position', err),
@@ -35,8 +35,8 @@
         let scene = document.querySelector('a-scene');
         for (let i=0;i<100;i++) {
         //places.forEach((place) => {
-            let latitude = lat+Math.random(); //place.location.lat;
-            let longitude = lon+Math.random(); //place.location.lng;
+            let latitude = lat+Math.random()*0.2-0.1; //place.location.lat;
+            let longitude = lon+Math.random()*0.2-0.1; //place.location.lng;
 
             // add place name
             let box = document.createElement('a-box');
