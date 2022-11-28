@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>GeoAR.js demo</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <!--<script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>-->
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
 </head>
@@ -19,6 +19,11 @@
         <a-text value="This will always face the user." scale="75 75 75" gps-entity-place="latitude: 51.0491; longitude: -0.723;"></a-text>
         <a-sphere gps-entity-place="latitude: 51.05; longitude: -0.723;"  scale="75 75 75" radius=5 color=red></a-sphere>
 		<a-sphere gps-entity-place="latitude: 51.03; longitude: -0.723;"  scale="100 100 100" radius=5 color=green></a-sphere>
+
+        <a-sphere gps-entity-place="latitude: 51.049; longitude: -0.733;"  scale="75 75 75" radius=5 color=blue></a-sphere>
+		<a-sphere gps-entity-place="latitude: 51.049; longitude: -0.713;"  scale="100 100 100" radius=5 color=yellow></a-sphere>
+
+
     </a-scene>
 </body>
 </html>
