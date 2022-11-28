@@ -16,11 +16,12 @@
         arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'>
 
         <a-camera gps-camera='simulateLatitude: 51.04; simulateLongitude: -0.72' rotation-reader></a-camera>
-        <a-sphere gps-entity-place="latitude: 51.06; longitude: -0.72;"  scale="50 50 50" radius=5 color=red></a-sphere>
-        <a-entity gps-entity-place="latitude: 51.02; longitude: -0.72;"  position="0 1000 0">
+       
+        <a-entity gps-entity-place="latitude: 51.02; longitude: -0.72;"  position="0 -1000 0">
+            <a-sphere scale="50 50 50" radius=5 color=red></a-sphere>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 51.02; longitude: -0.72;"  position="0 10000 0">
             <a-sphere  scale="50 50 50" radius=5 color=green></a-sphere>
-
-
         </a-entity>
 		
         <a-sphere gps-entity-place="latitude: 51.04; longitude: -0.74;"  scale="50 50 50" radius=5 color=blue></a-sphere>
